@@ -71,14 +71,104 @@
 <body>
   <h1>¡Feliz Cumpleaños Marian!</h1>
 
-  <div class="cake">
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="candle">
-      <div class="flame"></div>
-    </div>
+  <style>
+  .cake {
+    position: relative;
+    margin: 200px auto 0;
+    width: 220px;
+    height: 160px;
+  }
+
+  .layer {
+    width: 220px;
+    height: 50px;
+    background: #ffab91;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  .frosting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 20px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 4px solid #f48fb1;
+  }
+
+  .sprinkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: red;
+    animation: float 3s infinite ease-in-out;
+  }
+
+  .sprinkle:nth-child(1) { top: 5px; left: 20px; background: #ff4081; }
+  .sprinkle:nth-child(2) { top: 8px; left: 60px; background: #7c4dff; }
+  .sprinkle:nth-child(3) { top: 6px; left: 100px; background: #4db6ac; }
+  .sprinkle:nth-child(4) { top: 7px; left: 140px; background: #ffeb3b; }
+  .sprinkle:nth-child(5) { top: 5px; left: 180px; background: #8bc34a; }
+
+  .candle {
+    position: absolute;
+    top: -60px;
+    left: 100px;
+    width: 20px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+
+  .flame {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 10px;
+    height: 20px;
+    background: orange;
+    border-radius: 50%;
+    animation: flicker 0.3s infinite;
+  }
+
+  @keyframes flicker {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+  }
+</style>
+
+<div class="cake">
+  <div class="layer">
+    <div class="frosting"></div>
+    <div class="sprinkle"></div>
+    <div class="sprinkle"></div>
+    <div class="sprinkle"></div>
+    <div class="sprinkle"></div>
+    <div class="sprinkle"></div>
   </div>
+  <div class="layer">
+    <div class="frosting"></div>
+  </div>
+  <div class="layer">
+    <div class="frosting"></div>
+  </div>
+  <div class="candle">
+    <div class="flame"></div>
+  </div>
+</div>
+
 
   <br>
 

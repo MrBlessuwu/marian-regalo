@@ -71,12 +71,18 @@
       flex-direction:row;
       justify-content:center;
       gap:20px;
+      flex-wrap:wrap;
     }
     .menu a {
       text-decoration:none;
       color:#0b5fa8;
       font-weight:600;
       font-size:14px;
+      padding:6px 10px;
+      border-radius:8px;
+    }
+    .menu a:hover {
+      background:#f2f6fb;
     }
 
     .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px; background:var(--blue); border-radius:12px; margin-top:16px;}
@@ -134,7 +140,7 @@
     </div>
     <div class="menu">
       <a href="error.html">Asignaciones</a>
-      <a href="error.html">Notas Primer Semestre</a>
+      <a href="error.html">Notas primer semestre</a>
       <a href="https://auth.ingenieria.usac.edu.gt/auth/realms/fiusac-general/protocol/openid-connect/auth?client_id=cliente-uedi2025&response_type=code&redirect_uri=https%3A%2F%2Fuedi.ingenieria.usac.edu.gt%2Fcampus%2Fadmin%2Foauth2callback.php&state=%2Fauth%2Foauth2%2Flogin.php%3Fwantsurl%3Dhttps%253A%252F%252Fuedi.ingenieria.usac.edu.gt%252Fcampus%252Fmy%252F%26sesskey%3DCGtNVpcs3a%26id%3D1&scope=openid%20profile%20email%20datos-ingenieria" target="_blank">UEDI</a>
       <a href="error.html">Académicas 1</a>
       <a href="error.html">Académicas 2</a>
@@ -172,4 +178,36 @@
         <tr><td>Área Social Humanística 2</td><td class="aprobada">67</td></tr>
         <tr><td>Área Matemática Básica 2</td><td class="aprobada">63</td></tr>
         <tr><td>Física Básica</td><td class="aprobada">64</td></tr>
-        <tr><td>Introducción a la Programación</td><td class="aprobada">72</td></
+        <tr><td>Introducción a la Programación</td><td class="aprobada">72</td></tr>
+        <tr><td>Deportes 2</td><td class="aprobada">80</td></tr>
+        <tr><td>Área Técnica Complementaria 2</td><td class="aprobada">62</td></tr>
+      </table>
+    </div>
+
+    <h2 class="section">Exámenes</h2>
+    <div class="card">
+      <h3>Punteos por Clase</h3>
+      <table>
+        <tr><th>Clase</th><th>Examen 1</th><th>Examen 2</th><th>Examen 3</th></tr>
+        <tr><td>Técnicas Estudio</td><td>21</td><td>20</td><td>20</td></tr>
+        <tr><td>Lab Técnicas</td><td>22</td><td>20</td><td>19</td></tr>
+        <tr><td>Social Humanística 2</td><td>20</td><td>21</td><td>20</td></tr>
+        <tr><td>Matemática Básica 2</td><td>21</td><td>20</td><td>22</td></tr>
+        <tr><td>Física Básica</td><td>20</td><td>20</td><td>23</td></tr>
+        <tr><td>Intro Programación</td><td>23</td><td>24</td><td>25</td></tr>
+        <tr><td>Deportes 2</td><td>20</td><td>20</td><td>21</td></tr>
+        <tr><td>Área Técnica 2</td><td>21</td><td>20</td><td>21</td></tr>
+      </table>
+    </div>
+
+    <!-- Sección de Promedio -->
+    <h2 class="section">Promedio de notas</h2>
+    <div class="promedio-circle">65</div>
+
+    <footer>
+      Centro de Cálculo e Investigación Educativa - Facultad de Ingeniería - USAC
+    </footer>
+
+  </div>
+</body>
+</html>

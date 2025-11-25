@@ -16,26 +16,38 @@
     body{margin:0; background:linear-gradient(#f7f9fb,#f2f6f9); color:#223;}
     .container{max-width:420px; margin:20px auto; padding:16px;}
 
-    .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px; background:var(--blue); border-radius:12px; position:relative;}
+    /* Encabezado independiente FIUSAC */
+    .header{
+      background:#fff;
+      border-bottom:1px solid #e5e9ef;
+      box-shadow:0 4px 12px rgba(30,50,70,0.05);
+    }
+    .header-inner{
+      max-width:420px;
+      margin:0 auto;
+      padding:10px 16px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .header-logo{
+      width:120px;
+      height:36px;
+      display:flex;
+      align-items:center;
+    }
+    .header-logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px; background:var(--blue); border-radius:12px; margin-top:16px;}
     .brand{display:flex; align-items:center; gap:12px}
     .logo{width:44px; height:44px; border-radius:50%; overflow:hidden; background:#fff}
     .logo img{width:100%; height:100%; object-fit:cover}
     .user{display:flex; align-items:center; gap:10px; color:white;}
     .avatar{width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,#dfefff,#cfe6ff); display:flex; align-items:center; justify-content:center; color:#0b5fa8; font-weight:600}
-
-    /* Logo FIUSAC en esquina */
-    .corner-logo {
-      position:absolute;
-      top:8px;
-      left:8px;
-      width:50px;
-      height:50px;
-    }
-    .corner-logo img {
-      width:100%;
-      height:100%;
-      object-fit:contain;
-    }
 
     .btn{display:inline-block; background:var(--blue); color:#fff; padding:12px 16px; border-radius:8px; text-decoration:none; font-weight:600;}
 
@@ -70,16 +82,21 @@
   </style>
 </head>
 <body>
+
+  <!-- Encabezado FIUSAC independiente -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="https://redesestudio.ingenieria.usac.edu.gt/images/logo_facultad/fiusac_negro.png" alt="FIUSAC" />
+      </div>
+    </div>
+  </header>
+
   <div class="container">
 
     <div class="topbar">
-      <!-- Logo FIUSAC en esquina -->
-      <div class="corner-logo">
-        <img src="https://redesestudio.ingenieria.usac.edu.gt/images/logo_facultad/fiusac_negro.png" />
-      </div>
-
       <div class="brand">
-        <div class="logo"><img src="https://www.mzaghi.com/wp-content/uploads/2014/10/usac.jpg" /></div>
+        <div class="logo"><img src="https://www.mzaghi.com/wp-content/uploads/2014/10/usac.jpg" alt="USAC" /></div>
       </div>
       <div class="user">
         <div style="text-align:right;">
@@ -138,4 +155,3 @@
   </div>
 </body>
 </html>
-

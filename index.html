@@ -33,8 +33,26 @@
     table{width:100%; border-collapse:collapse; margin-top:10px;}
     th,td{padding:8px; border-bottom:1px solid #ddd; font-size:14px}
     th{text-align:left; color:#0b5fa8}
+    td.aprobada{color:green; font-weight:bold;}
 
     footer{text-align:center; color:var(--muted); font-size:13px; margin-top:30px}
+
+    /* Estilo del gráfico circular */
+    .promedio-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(#4caf50 0% 65%, #ddd 65% 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:30px auto;
+      font-size:36px;
+      font-weight:bold;
+      color:#0b5fa8;
+      box-shadow:0 0 25px rgba(0,0,0,0.2);
+      border:8px solid #fff;
+    }
   </style>
 </head>
 <body>
@@ -42,7 +60,7 @@
 
     <div class="topbar">
       <div class="brand">
-        <div class="logo"><img src="/mnt/data/WhatsApp Image 2025-11-24 at 6.54.38 PM.jpeg" /></div>
+        <div class="logo"><img src="https://www.mzaghi.com/wp-content/uploads/2014/10/usac.jpg" /></div>
       </div>
       <div class="user">
         <div style="text-align:right;">
@@ -63,14 +81,14 @@
       <h3>Clases Aprobadas</h3>
       <table>
         <tr><th>Clase</th><th>Nota Final</th></tr>
-        <tr><td>Técnicas de Estudio e Investigación</td><td>61</td></tr>
-        <tr><td>Laboratorio de Técnicas de Estudio</td><td>61</td></tr>
-        <tr><td>Área Social Humanística 2</td><td>67</td></tr>
-        <tr><td>Área Matemática Básica 2</td><td>63</td></tr>
-        <tr><td>Física Básica</td><td>64</td></tr>
-        <tr><td>Introducción a la Programación</td><td>72</td></tr>
-        <tr><td>Deportes 2</td><td>80</td></tr>
-        <tr><td>Área Técnica Complementaria 2</td><td>62</td></tr>
+        <tr><td>Técnicas de Estudio e Investigación</td><td class="aprobada">61</td></tr>
+        <tr><td>Laboratorio de Técnicas de Estudio</td><td class="aprobada">61</td></tr>
+        <tr><td>Área Social Humanística 2</td><td class="aprobada">67</td></tr>
+        <tr><td>Área Matemática Básica 2</td><td class="aprobada">63</td></tr>
+        <tr><td>Física Básica</td><td class="aprobada">64</td></tr>
+        <tr><td>Introducción a la Programación</td><td class="aprobada">72</td></tr>
+        <tr><td>Deportes 2</td><td class="aprobada">80</td></tr>
+        <tr><td>Área Técnica Complementaria 2</td><td class="aprobada">62</td></tr>
       </table>
     </div>
 
@@ -90,6 +108,9 @@
       </table>
     </div>
 
+    <!-- Gráfico circular del promedio -->
+    <div class="promedio-circle">65</div>
+
     <footer>
       Centro de Cálculo e Investigación Educativa - Facultad de Ingeniería - USAC
     </footer>
@@ -97,4 +118,5 @@
   </div>
 </body>
 </html>
+
 
